@@ -76,6 +76,7 @@ h6 {
   font-family: sans-serif;
   font-weight: bold;
   color: rgb(59, 203, 203);
+  margin-left: 100px;
 }
 .back-to-top {
   position: fixed;
@@ -153,8 +154,8 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 90px;
-  padding: 25px 0;
+  height: 50px;
+  padding: 10px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -174,7 +175,7 @@ h6 {
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  padding: 6px 0;
+  padding: 6px 360px;
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -189,6 +190,7 @@ h6 {
 #header #logo h1 a,
 #header #logo h1 a:hover {
   color: #fff;
+  display: inline-block;
 }
 
 #header #logo img {
@@ -208,28 +210,30 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
 }
 
 .nav-menu ul {
   position: absolute;
-  display: none;
-  top: 100%;
+  display: inline-block;
   left: 0;
   z-index: 100;
 }
 
 .nav-menu li {
   position: relative;
+  display: inline-block;
 }
 
 .nav-menu > li {
   float: left;
   margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
-  display: block;
+  display: inline-block;
 }
 
 .nav-menu ul ul {
@@ -1408,7 +1412,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top {
   background: #040919;
   padding: 60px 0 30px 0;
-  /* margin:50px 0; */
 }
 
 #footer .footer-top .footer-info {
@@ -1507,8 +1510,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-  display: inline-block;
-  padding-left: 520px;
+  display: block;
+  /* padding-left: 520px; */
+  margin-left: 530px;
 }
 
 #footer .footer-top .footer-contact p {
