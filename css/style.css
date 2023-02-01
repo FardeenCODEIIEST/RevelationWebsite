@@ -8,11 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-* {
-  /* border-top: 5px solid #1098ad; */
-  margin: 0;
-  padding: 0;
-}
+
 body {
   background: #fff;
   color: #2f3138;
@@ -31,7 +27,14 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-
+.Revelation {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+  letter-spacing: 4px;
+}
 p {
   padding: 0;
   margin: 0 0 30px 0;
@@ -72,12 +75,7 @@ h6 {
 }
 
 /* Back to top button */
-.heading-logo {
-  font-family: sans-serif;
-  font-weight: bold;
-  color: rgb(59, 203, 203);
-  margin-left: 100px;
-}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -154,8 +152,8 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 50px;
-  padding: 10px 0;
+  height: 90px;
+  padding: 25px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -175,7 +173,7 @@ h6 {
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  padding: 6px 360px;
+  padding: 6px 0;
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -190,7 +188,6 @@ h6 {
 #header #logo h1 a,
 #header #logo h1 a:hover {
   color: #fff;
-  display: inline-block;
 }
 
 #header #logo img {
@@ -210,35 +207,33 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: inline-block;
 }
 
 .nav-menu ul {
   position: absolute;
-  display: inline-block;
+  display: none;
+  top: 100%;
   left: 0;
-  z-index: 100;
+  z-index: 99;
 }
 
 .nav-menu li {
   position: relative;
-  display: inline-block;
+  white-space: nowrap;
 }
 
 .nav-menu > li {
   float: left;
-  margin-right: 50px;
-  margin-bottom: 50px;
 }
 
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
-  display: inline-block;
+  display: block;
 }
 
 .nav-menu ul ul {
   top: 0;
-  left: 50%;
+  left: 100%;
 }
 
 .nav-menu ul li {
@@ -268,6 +263,7 @@ h6 {
 
 #nav-menu-container {
   float: right;
+  margin: 0;
 }
 
 /* Nav Meu Styling */
@@ -1441,10 +1437,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#footer .footer-top .social-links {
-  position: relative;
-  display: inline-block;
-}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1492,8 +1484,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #262c44;
-  padding: 10px 0;
+  border-bottom: 1px solid #4c4e53;
+  padding: 25px 0;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1510,15 +1502,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-  display: block;
-  /* padding-left: 520px; */
-  margin-left: 530px;
 }
 
 #footer .footer-top .footer-contact p {
-  line-height: 16px;
-  display: inline-block;
-  line-break: auto;
+  line-height: 26px;
 }
 
 #footer .footer-top .footer-newsletter {
@@ -1642,6 +1629,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 60px;
   }
 }
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
