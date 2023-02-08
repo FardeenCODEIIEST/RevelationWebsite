@@ -74,6 +74,9 @@ h6 {
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
+#events {
+  margin-top: 20px;
+}
 /* Back to top button */
 
 .back-to-top {
@@ -1099,7 +1102,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
 }
-
+#check {
+  margin-left: 381px;
+}
 #supporters .supporter-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -1665,5 +1670,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  #check {
+    margin-left: 0px;
   }
 }
